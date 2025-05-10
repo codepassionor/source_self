@@ -198,6 +198,20 @@ https://huggingface.co/Kevin3777/source_self_end_title
 | Evaluation Time | 234.59040713310242 seconds |
 | Samples Per Second | 6.837449235892749 |
 
+
+### Average Scores (with Title Injection on both training and testing phase)    
+| Metric     | Score               |  
+|------------|---------------------|  
+| ROUGE-1    | 0.2459              |  
+| ROUGE-2    | 0.0531              |  
+| ROUGE-L    | 0.2245              |  
+
+### Evaluation Performance (with Title Injection on both training and testing phase) 
+| Metric               | Value               |  
+|----------------------|---------------------|  
+| Evaluation Time      | 275.13 seconds      |  
+| Samples Per Second   | 5.83                |
+
 ### Example Prediction (Sample #0)
 
 **Paper ID**: econ.EM.econ/EM/2411.16978v2
@@ -239,7 +253,7 @@ approach for identifying the number of models that best represent a data set.
 
 ## Evaluation Result for End
 
-### Evaluation Scores
+### Evaluation Scores 
 
 | Metric | Value |
 |------|------|
@@ -251,6 +265,24 @@ approach for identifying the number of models that best represent a data set.
 
 ### Evaluation Parameters
 
+| Parameter | Value |
+|------|------|
+| max_new_tokens | 20 |
+| temperature | 0.0 |
+| batch_size | 32 |
+| num_samples | 1604 |
+
+### Evaluation Scores (with Title Injection on both training and testing phase)    
+
+| Metric                  | Value               |  
+|-------------------------|---------------------|  
+| category_accuracy       | 0.7606              |  
+| subcategory_accuracy    | 0.5474              |  
+| total_samples           | 1604                |  
+| evaluation_time         | 64.98 seconds       |  
+| samples_per_second      | 24.69               |  
+
+### Evaluation Parameters (with Title Injection on both training and testing phase)    
 | Parameter | Value |
 |------|------|
 | max_new_tokens | 20 |
